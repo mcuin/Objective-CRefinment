@@ -1,4 +1,4 @@
-#include <stdio.h>
+#import <Foundation/Foundation.h>
 
 int main() {
 	NSLog(@"Hello, World! \n");
