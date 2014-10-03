@@ -8,15 +8,15 @@ struct Books {
 }
 
 @interface SampleClass:NSObject
-- (void) printBook:(struct Books) book;
+- (void) printBook:(struct Books *) book;
 @end
 
 @implementation 
-- (void) printBook:(struct Books) book {
-	NSLog(@"Book title: %@\n", book.title);
-	NSLog(@"Book author: %@\n", book.author);
-	NSLog(@"Book subject: %@\n", book.subject);
-	NSLog(@"Book id: %d\n", book.book_id;
+- (void) printBook:(struct Books *) book {
+	NSLog(@"Book title: %@\n", book->title);
+	NSLog(@"Book author: %@\n", book->author);
+	NSLog(@"Book subject: %@\n", book->subject);
+	NSLog(@"Book id: %d\n", book->book_id;
 }
 
 int main() {
@@ -37,4 +37,9 @@ int main() {
 	NSLog(@"Book 1 author: %@\n", book1.author);
 	NSLog(@"Book 1 subject: %@\n", book1.subject);
 	NSLog(@"Book 1 id: %d\n", book1.book_id;
+
+	SampleClass *sample = [[SampleClass alloc] init];
+	[sample printBook: &book2];
+
+	
 }
