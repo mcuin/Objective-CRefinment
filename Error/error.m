@@ -21,5 +21,27 @@
 @end
 
 int main() {
+	NSAutoReleasePool *pool = [[NSAutoReleasePool alloc] init];
+	SimpleClass *simple = [[SimpleClass alloc] init];
+	NSError *error = nil;
+	NSString *string1 = [simpleClass getEmployeeNameForId:1 withError:&error];
 	
+	if (error) {
+		NSLog(@"Error finding name of id 1: %@\n", error);
+	} else {
+		NSLog(@"Name at id 1 is: @%\n", string1);
+	}
+
+	error = nil;
+	NSString *string2 = [simpleClass getEmployeeNameForId:1 withError:&error];
+
+	if (error)
+		NSLog(@"Error finding name of id 2: %@\n", error);
+	} else {
+		NSLog(@"Name at is 2 is: %@\n", string2);
+	}
+
+	[pool drain];
+	
+	return 0;
 }
