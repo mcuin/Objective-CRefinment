@@ -17,8 +17,22 @@
     return person;
 }
 
+- (id)init {
+    return [self initWithFirstName:@"Mykal" lastName:@"Cuin" dob:nil partner:nil];
+}
+
+- (id)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)birthday partner:(NSString *)partner {
+    return [self initWithFirstName:firstName lastName:lastName dob:birthday partner:partner];
+}
+
 - (void)sayHello {
     MPCPerson *people = [MPCPerson person];
+    [people setFirstName:@"Mykal"];
+    [people setLastName:@"Cuin"];
+    NSString *fName = [people firstName];
+    NSString *lName = [people lastName];
+    NSLog(@"%@", fName);
+    NSLog(@"%@", lName);
     [people saySomething:(@"Hello")];
     [people saySomething:(@"Bonjour")];
     

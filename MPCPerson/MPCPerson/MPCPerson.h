@@ -14,12 +14,15 @@
 
 @interface MPCPerson : NSObject
 
-@property NSString *fristname;
-@property NSString *lastname;
+@property NSString *firstName;
+@property NSString *lastName;
 @property NSDate *dateOfBirth;
+@property (weak) NSString *partner;
 
 - (void)sayHello;
 - (void)saySomething:(NSString *)greeting;
+- (id)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth partner:(NSString *)partner;
+- (id)init;
 
 + (id)person;
 
