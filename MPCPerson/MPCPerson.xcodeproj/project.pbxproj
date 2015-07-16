@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB3544551B56CE3B0031BBB2 /* MPCPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3544541B56CE3B0031BBB2 /* MPCPerson.m */; };
 		DB3544611B56E0640031BBB2 /* MPCShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3544601B56E0640031BBB2 /* MPCShoutingPerson.m */; };
+		DBF52ED61B57C33C007CA99B /* MPCPersonCatagories.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF52ED51B57C33C007CA99B /* MPCPersonCatagories.m */; };
+		DBF52ED91B57C5BF007CA99B /* MPCPersonExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF52ED81B57C5BF007CA99B /* MPCPersonExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,10 @@
 		DB35445B1B56CEA10031BBB2 /* MPCPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPCPerson.h; sourceTree = "<group>"; };
 		DB35445F1B56E0350031BBB2 /* MPCShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPCShoutingPerson.h; sourceTree = "<group>"; };
 		DB3544601B56E0640031BBB2 /* MPCShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCShoutingPerson.m; sourceTree = "<group>"; };
+		DBF52ED41B57C320007CA99B /* MPCPersonCatagories.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPCPersonCatagories.h; sourceTree = "<group>"; };
+		DBF52ED51B57C33C007CA99B /* MPCPersonCatagories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCPersonCatagories.m; sourceTree = "<group>"; };
+		DBF52ED71B57C5AA007CA99B /* MPCPersonExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPCPersonExtension.h; sourceTree = "<group>"; };
+		DBF52ED81B57C5BF007CA99B /* MPCPersonExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPCPersonExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,10 @@
 				DB35445B1B56CEA10031BBB2 /* MPCPerson.h */,
 				DB35445F1B56E0350031BBB2 /* MPCShoutingPerson.h */,
 				DB3544601B56E0640031BBB2 /* MPCShoutingPerson.m */,
+				DBF52ED41B57C320007CA99B /* MPCPersonCatagories.h */,
+				DBF52ED51B57C33C007CA99B /* MPCPersonCatagories.m */,
+				DBF52ED71B57C5AA007CA99B /* MPCPersonExtension.h */,
+				DBF52ED81B57C5BF007CA99B /* MPCPersonExtension.m */,
 			);
 			path = MPCPerson;
 			sourceTree = "<group>";
@@ -127,6 +137,8 @@
 			files = (
 				DB3544611B56E0640031BBB2 /* MPCShoutingPerson.m in Sources */,
 				DB3544551B56CE3B0031BBB2 /* MPCPerson.m in Sources */,
+				DBF52ED61B57C33C007CA99B /* MPCPersonCatagories.m in Sources */,
+				DBF52ED91B57C5BF007CA99B /* MPCPersonExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +255,7 @@
 				DB35445A1B56CE3B0031BBB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

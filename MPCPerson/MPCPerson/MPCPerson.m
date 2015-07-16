@@ -9,6 +9,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MPCPerson.h"
+#import "MPCPersonCatagories.h"
 
 @implementation MPCPerson
 
@@ -31,8 +32,7 @@
     [people setLastName:@"Cuin"];
     NSString *fName = [people firstName];
     NSString *lName = [people lastName];
-    NSLog(@"%@", fName);
-    NSLog(@"%@", lName);
+    NSLog(@"%@, %@", fName, lName);
     [people saySomething:(@"Hello")];
     [people saySomething:(@"Bonjour")];
     
@@ -51,4 +51,5 @@ int main(int argc, const char * argv[]) {
     if (pers == nil) {
         NSLog(@"Inside the if");
     }
+    [pers lastNameFirstName];
 }

@@ -18,11 +18,15 @@
 @property NSString *lastName;
 @property NSDate *dateOfBirth;
 @property (weak) NSString *partner;
+@property (readonly) NSNumber *height;
+@property (readonly) NSNumber *weight;
 
 - (void)sayHello;
 - (void)saySomething:(NSString *)greeting;
 - (id)initWithFirstName:(NSString *)firstName lastName:(NSString *)lastName dob:(NSDate *)dateOfBirth partner:(NSString *)partner;
 - (id)init;
+- (NSNumber *)measureWeight;
+- (NSNumber *)measureHeight;
 
 + (id)person;
 
